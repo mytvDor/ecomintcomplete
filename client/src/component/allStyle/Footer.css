@@ -1,0 +1,39 @@
+footer {
+  display: flex;
+  align-item: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+  background: #10182f;
+  color: white;
+}
+
+.footer-column {
+  min-width: 200px;
+  height: 300px;
+  /* border: 2px solid red; */
+  margin: 20px;
+}
+
+.linksBlk {
+  /* border: 2px solid blue; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-item: center;
+  justify-content: space-around; /* background: yellow; */
+}
+
+h4 {
+}
+
+.link {
+  margin: 5px;
+  font-size: 20px;
+  color: #fff;
+  /* border: 2px solid green; */
+}
+
+.link:hover {
+  color: #e6b800;
+}

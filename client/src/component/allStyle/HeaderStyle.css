@@ -1,0 +1,185 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+  /* overflow: scroll; */
+}
+
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.signUp {
+  background: #e6b800;
+  color: black;
+}
+nav {
+  background: #10182f;
+  border-radius: 5px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: aliceblue;
+}
+
+.logo {
+  padding-left: 3%;
+  font-size: 30px;
+}
+
+ul {
+  display: flex;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.liv {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.hi {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 25px;
+  position: center;
+}
+
+a {
+  margin: 10px;
+  padding: 5px;
+}
+
+.liv:hover,
+.active,
+.hi:hover {
+  color: #10182f;
+  background-color: aliceblue;
+  transition: 0.3s;
+}
+.logout:hover {
+  background: red;
+}
+.menu {
+  display: none;
+}
+
+#click {
+  display: none;
+}
+
+.bar {
+  height: 2px;
+  width: 20px;
+  margin: 5px;
+  background-color: aliceblue;
+}
+
+.circle {
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  background: red;
+  border: 2px solid white;
+  color: white;
+  margin: 10px;
+  font-size: 14px;
+  display: flex;
+  align-item: center;
+  justify-content: space-around;
+}
+.cart {
+  display: flex;
+}
+
+@media (max-width: 1100px) {
+  nav {
+    top: 0;
+    display: flex;
+    background: #10182f;
+
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+  }
+
+  ul {
+    display: block;
+    z-index: 212;
+
+    flex-direction: column;
+    background: #10182f;
+
+    position: fixed;
+    top: 50px;
+    height: 100vh;
+    width: 100%;
+    margin: 20px 0 0 0;
+    right: -100%;
+    transition: 0.7s;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .bar {
+    height: 2px;
+    width: 20px;
+    margin: 3px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .liv {
+    text-align: center;
+    margin: 30px 70px;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .hi {
+    text-align: center;
+    margin: -3% 70px;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 70px;
+  }
+
+  .check {
+    margin-left: 65%;
+  }
+
+  .logo {
+    margin-right: 0%;
+  }
+
+  #click:checked ~ .un ul {
+    right: 0%;
+  }
+
+  #click:checked ~ .check.menu :before {
+    content: "\f00d";
+  }
+}

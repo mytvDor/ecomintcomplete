@@ -1,0 +1,132 @@
+.cart-card {
+  display: flex;
+  align-item: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border: 1px solid #10182f;
+
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin: 90px;
+  padding: 30px;
+  height: 400px;
+}
+
+.cart-image {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 250px; */
+}
+
+.cart-image img {
+  width: 100%;
+  height: auto;
+}
+
+.cart-details {
+  /* flex: 1; */
+
+  padding: 20px;
+  /* background: red; */
+}
+
+.product-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 19px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.cart-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-price {
+  font-size: 26px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.cart-buttons {
+  display: flex;
+  height: 60px;
+}
+
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  /* height: 5px;
+  width: 5px; */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-remove {
+  background-color: #ff4d4d;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.btn-save {
+  background-color: #f0ad4e;
+  color: black;
+}
+
+.btn:hover {
+  background-color: darken(#333, 10%);
+}
+
+.quantity-controls {
+  margin-top: 10px;
+}
+
+.quantity-btn {
+  background-color: #ddd;
+  border: none;
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.quantity {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+@media (max-width: 1100px) {
+  .cart-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+    margin-top: 150px;
+  }
+
+  .cart-image {
+    order: -1;
+    width: 300px;
+    margin-bottom: 20px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cart-details {
+    padding: 0;
+  }
+}
