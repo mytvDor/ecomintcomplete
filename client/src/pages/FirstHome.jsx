@@ -48,15 +48,21 @@ const FirstHome = () => {
 
       <div
         className="searchBox"
-        style={{ display: "flex", margin: "100px 30px 30px 30px" }}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          margin: "60px 30px 30px 30px",
+        }}
       >
         <input
           type="text"
           placeholder="search product "
           style={{
-            border: "3px solid black",
-            width: "500px",
-            fontSize: "20px",
+            border: "2px solid black",
+            maxWidth: "350px",
+            fontSize: "15px",
+            borderRadius: "10px",
           }}
           value={searchProducts}
           onChange={(e) => {
@@ -70,7 +76,16 @@ const FirstHome = () => {
           onChange={(e) => {
             setOption(e.target.value);
           }}
-          style={{ width: "130px" }}
+          style={{
+            width: "130px",
+            margin: "20px 20px 20px 20px",
+            height: "45px",
+            border: "2px solid black",
+            borderRadius: "10px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
           <option value={option}>{option}</option>
           <option value="Title">Title</option>
