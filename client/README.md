@@ -1,8 +1,20 @@
 
-# ECOMMERCE 
+# ECOMMERCE - ECOMMINT 
 
-A brief description of what this project does and who it's for
+The project is an e-commerce platform named "ECOMINT" designed to facilitate online buying and selling activities. It aims to provide a user-friendly interface for customers to browse through various products, add them to their cart.
 
+The project utilizes technologies such as React for the frontend, Node.js and Express.js for the backend, and MongoDB as the database. It incorporates Redux for state management and implements RESTful API endpoints for communication between the frontend and backend. The project also focuses on responsive design to ensure a seamless user experience across different devices.
+
+
+Key features of the project include:
+
+User authentication and authorization
+Product browsing and searching functionality
+Product categorization
+Shopping cart management
+## Architecture
+
+![diagram-export-3-20-2024-6_52_00-PM](https://github.com/mytvDor/ecomintcomplete/assets/159150094/670de0a4-ba90-40bb-87a1-ecf8d5822f3a)
 
 ## Run Locally
 
@@ -50,6 +62,13 @@ cd server
   npm start
 ```
  7 . open  http://localhost:5173 on browser
+
+
+ NOTE : PROJECT RUNS ONLY ON MONGO DB AT LOCAL 
+ 
+```bash
+ "mongodb://localhost:27017/ecomint"
+ ```
 ## Demo
 
 Insert gif or link to demo
@@ -62,7 +81,7 @@ https://github.com/mytvDor/ecomintcomplete/assets/159150094/91fbda74-02ed-46cd-a
 
 ## Features
 
-- Authentication
+- Authentication (jwt)
 - Responsivness
 - Filter with title, price ,category
 - Add to cart
@@ -76,7 +95,3 @@ https://github.com/mytvDor/ecomintcomplete/assets/159150094/91fbda74-02ed-46cd-a
 
 
 ![Screenshot 2024-03-20 132246](https://github.com/mytvDor/ecomintcomplete/assets/159150094/c4630699-aa12-44d7-95fd-9fbc6ce5d5a6)
-## Documentation
-
-[Documentation](https://linktodocumentation)
-
