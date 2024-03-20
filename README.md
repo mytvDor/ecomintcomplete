@@ -50,6 +50,13 @@ cd server
   npm start
 ```
  7 . open  http://localhost:5173 on browser
+
+
+ NOTE : PROJECT RUNS ONLY ON MONGO DB AT LOCAL 
+ 
+```bash
+ "mongodb://localhost:27017/ecomint"
+ ```
 ## Demo
 
 Insert gif or link to demo
@@ -62,7 +69,7 @@ https://github.com/mytvDor/ecomintcomplete/assets/159150094/91fbda74-02ed-46cd-a
 
 ## Features
 
-- Authentication
+- Authentication (jwt)
 - Responsivness
 - Filter with title, price ,category
 - Add to cart
