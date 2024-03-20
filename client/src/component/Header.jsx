@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
-
 import "../component/allStyle/HeaderStyle.css";
 import { Link } from "react-router-dom";
-// import { useSelector } from "react-redux";
-
-//CART MANAGEMENT
-
 import { useDispatch, useSelector } from "react-redux";
 
+//NOTE :  THIS PAGE MAY HAVE SOME TESTING COMMENTS AND UNUSED VARIABLES 
+
 const Header = () => {
+  const dispatch = useDispatch();
+
   const orderInCart = useSelector((state) => state.user.orderInCart);
   const count = orderInCart.length;
+
   const hi = useSelector((state) => state.user.orderInCart);
   let username;
-  // console.log;
+
   const [presentData, setPresentDaata] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const handleMouseEnter = () => {
@@ -28,10 +28,18 @@ const Header = () => {
 
   if (data) {
     username = JSON.parse(data).userdata.username;
-    useEffect(() => {
-      setPresentDaata(true);
-    }, []);
   }
+  // = orderInCart.length;
+  //   useEffect(() => {
+  //     setPresentDaata(true);
+  //   }, []);
+  // }
+
+  useEffect(() => {
+    if (data) {
+      setPresentDaata(true);
+    }
+  }, []);
 
   const handleLogOut = () => {
     localStorage.clear();
